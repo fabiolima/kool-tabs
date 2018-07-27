@@ -1,0 +1,139 @@
+.content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .content:nth-child(1) {
+    background-color: #B2EBF2; }
+  .content:nth-child(2) {
+    background-color: #E1BEE7; }
+  .content:nth-child(3) {
+    background-color: #DCEDC8; }
+  .content:nth-child(4) {
+    background-color: #FFF9C4; }
+
+.tabs {
+  width: 600px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; }
+  .tabs .tabs-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    border-width: 1px 1px 0px 1px;
+    border-color: #ececec;
+    border-style: solid; }
+    .tabs .tabs-header .tab {
+      background-color: #8BC34A;
+      color: #fff;
+      flex: 1;
+      font-size: 1.2em;
+      padding: 1.5rem;
+      text-align: center;
+      transition: background-color 200ms ease;
+      z-index: 1; }
+      .tabs .tabs-header .tab.is-active {
+        background-color: #689F38; }
+  .tabs .line {
+    background-color: #0074a2;
+    content: '';
+    display: block;
+    height: 10px;
+    margin-left: 0;
+    margin-top: -10px;
+    transition: margin-left 200ms ease;
+    width: 100%;
+    z-index: 9999; }
+  .tabs .tabs-body {
+    background-color: #fafafa;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    height: 300px;
+    padding: 20px;
+    overflow: hidden;
+    border-width: 0px 1px 1px 1px;
+    border-color: #ececec;
+    border-style: solid; }
+    .tabs .tabs-body .tab-content {
+      display: none;
+      width: 100%; }
+      .tabs .tabs-body .tab-content.is-active {
+        display: block; }
+
+.enter.from-right {
+  animation: enterFromRight 400ms ease-out; }
+
+.enter.from-left {
+  animation: enterFromLeft 400ms ease-out; }
+
+@keyframes enterFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(5%); }
+  100% {
+    opacity: 1;
+    transform: translateX(0%); } }
+
+@keyframes enterFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-5%); }
+  100% {
+    opacity: 1;
+    transform: translateX(0%); } }
+
+.tabs.blue .tab {
+  background-color: #00BCD4; }
+  .tabs.blue .tab.is-active {
+    background-color: #0097A7; }
+
+.tabs.blue .tabs-body {
+  background-color: #fafafa; }
+
+.tabs.blue .line {
+  background-color: #007b98; }
+
+.tabs.purple .tab {
+  background-color: #9C27B0; }
+  .tabs.purple .tab.is-active {
+    background-color: #7B1FA2; }
+
+.tabs.purple .tabs-body {
+  background-color: #fafafa; }
+
+.tabs.purple .line {
+  background-color: #510071; }
+
+.tabs.green .tab {
+  background-color: #8BC34A; }
+  .tabs.green .tab.is-active {
+    background-color: #689F38; }
+
+.tabs.green .tabs-body {
+  background-color: #fafafa; }
+
+.tabs.green .line {
+  background-color: #207100; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+html, body {
+  height: 100%;
+  min-height: 100%; }
+
+body {
+  color: #212121;
+  font-family: Helvetica Neue, sans-serif;
+  flex-direction: column;
+  margin: 0; }
+
+p {
+  color: #757575; }

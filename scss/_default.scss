@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  color: #212121;
+  font-family: Helvetica Neue, sans-serif;
+  flex-direction: column;
+  margin: 0;
+}
+
+p {
+  color: #757575;
+}
